@@ -10,14 +10,16 @@ public class ObnoxiousNiceCalculator {
         Scanner scanner = new Scanner(System.in);
 
         do {
+            
             // Print welcome message and prompts for user input
-            System.out.println("**********************************************");
-            System.out.println("*                                            *");
-            System.out.println("*      █░█░█ █▀▀ █░░ █▀▀ █▀█ █▀▄▀█ █▀▀   : } *");
-            System.out.println("*      ▀▄▀▄▀ ██▄ █▄▄ █▄▄ █▄█ █░▀░█ ██▄   : } *");
-            System.out.println("*                                            *");
-            System.out.println("**********************************************");
-            System.out.println();
+        
+            System.out.println("****************************************************");
+            System.out.println("*                                                  *");
+            System.out.println("*      █▀▀ ▄▀█ █░░ █▀▀ █░█ █░░ ▄▀█ ▀█▀ █▀█ █▀█     *");
+            System.out.println("*      █▄▄ █▀█ █▄▄ █▄▄ █▄█ █▄▄ █▀█ ░█░ █▄█ █▀▄     *");
+            System.out.println("*                                                  *");
+            System.out.println("*                                                  *");
+            System.out.println("****************************************************");
 
             System.out.print("ENTER THE FIRST NUMBER : ");
             firstNumber = scanner.nextDouble();
@@ -29,6 +31,7 @@ public class ObnoxiousNiceCalculator {
             secondNumber = scanner.nextDouble();
 
             // Perform arithmetic operation based on user input
+            
             switch (operator) {
                 case "+":
                     result = firstNumber + secondNumber;
@@ -40,7 +43,9 @@ public class ObnoxiousNiceCalculator {
                     result = firstNumber * secondNumber;
                     break;
                 case "/":
+                    
                     // Check for division by zero
+                    
                     if (secondNumber == 0) {
                         System.out.println("ERROR: DIVISION BY ZERO  IS NOT ALLOWED!! .");
                         return;
@@ -53,6 +58,7 @@ public class ObnoxiousNiceCalculator {
             }
 
             // Print result as a whole number
+            
             System.out.println("RESULT : " + Math.round(result));
 
             System.out.print("DO YOU WANT TO CONTINUE? (y/n): ");
@@ -61,11 +67,7 @@ public class ObnoxiousNiceCalculator {
         } while (choice.equalsIgnoreCase("y"));
 
         System.out.println("THANK YOU FOR USING THE MOST OBNOXIOUS CALCULATOR :)");
-
-
-        
-
-
-        
+        System.out.println("( ͡° ʖ̯ ͡°)");
+   
     }
 }
