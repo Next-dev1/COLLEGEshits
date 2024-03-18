@@ -34,7 +34,7 @@ class Circle extends Shape {
     }
 }
 
-// Test class
+// Main class
 public class LabExer3 {
     public static void main(String[] args) {
         // Create a Rectangle object
