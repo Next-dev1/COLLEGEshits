@@ -1,2 +1,2 @@
 # COLLEGEshits
-All kinds of proj is in here. 
+All kinds of my college proj is in here. 
