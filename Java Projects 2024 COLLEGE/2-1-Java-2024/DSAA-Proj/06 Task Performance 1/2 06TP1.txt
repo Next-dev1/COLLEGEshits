@@ -1,0 +1,7 @@
+2. Based on the tree below, determine the parent nodes, leaf nodes, and siblings. Type your answers in Notepad. 
+
+Parent Nodes - A,D,C,G
+
+Leaf Nodes - B,F,H,I,J,K,L
+
+Siblings - B and D,F and G,H and I and J,k and l
