@@ -1,6 +1,0 @@
-Sign up Successfully! 
-Name: admin123
-Password: password123
-Sex: M
-Age: 19
-Email: admin@gmail.com
