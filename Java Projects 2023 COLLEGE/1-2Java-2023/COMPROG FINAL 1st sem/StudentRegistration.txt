@@ -1,0 +1,118 @@
+package studentregistration;
+import java.util.Scanner;
+
+public class Studentregistrations {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String decision, username, username1, password, password1, choice;
+        
+        String[] firstname = new String[50];
+        String[] middlename = new String[50];
+        String[] lastname = new String[50];         
+        String[] section = new String[50];
+        String[] gender = new String[50];
+        String[] religion = new String[50];
+        
+        int[] age = new int[50];
+        int[] contact = new int[50];
+        
+        username = "admin"; 
+        password = "password"; 
+
+        System.out.println("Welcome to the Student Registration System");
+        System.out.println("Before you can access the program, you must log in first");
+
+        while (true) { 
+            System.out.print("Enter username: "); 
+            username1 = input.nextLine();
+            System.out.print("Enter password: "); 
+            password1 = input.nextLine();
+
+            if (username1.equals(username) && password1.equals(password)) { 
+
+                System.out.println("Congratulations! You have gained access to the student registration system");
+                break; 
+
+            } else {
+
+                System.out.println("Invalid username or password, please enter a valid username and password"); 
+            }
+        }
+
+        while (true) { 
+            System.out.println();
+            System.out.print("Would you like to register a student? (YES/NO): "); 
+            decision = input.nextLine();
+            System.out.println();
+
+            if (decision.equalsIgnoreCase("YES")) { 
+
+                for (int i = 0; i < 50; i++) { 
+
+                    System.out.print("Enter Section: "); 
+                    section[i] = input.nextLine();
+                    
+                    System.out.print("Enter First Name: "); 
+                    firstname[i] = input.nextLine(); 
+                    
+                    System.out.print("Enter Middle Name: "); 
+                    middlename[i] = input.nextLine();
+                    
+                    System.out.print("Enter Last Name: "); 
+                    lastname[i] = input.nextLine(); 
+                    
+                    System.out.print("Enter Age: "); 
+                    age[i] = input.nextInt(); 
+                    
+                    System.out.print("Enter Gender: "); 
+                    input.nextLine();  
+                    gender[i] = input.nextLine();
+                    
+                    System.out.print("Enter Religion: "); 
+                    religion[i] = input.nextLine(); 
+                    
+                    System.out.print("Enter contact: "); 
+                    contact[i] = input.nextInt(); 
+
+                    System.out.println("Successfully registered a student"); 
+                    System.out.println(); 
+
+                    System.out.print("Do you want to review the records? Type 'yes' to review, 'no' to add another student, or 'stop' to terminate: ");  
+                    input.nextLine();  
+                    choice = input.nextLine();
+
+                    if (choice.equalsIgnoreCase("yes")) { 
+
+                        for (int j = 0; j <= i; j++) { 
+                            System.out.println("Section: " + section[j] + "  First Name: " + firstname[j] + "  Middle Name: " + middlename[j] + "  Last Name: " + lastname[j] + "  Age: " + age[j] + "  Gender: " + gender[j] + "  Religion: " + religion[j] + " Contact: " + contact[j]);
+                        }  
+                        System.out.println();
+
+                        System.out.print("Do you want to add another student (Yes/No): "); 
+                        choice = input.nextLine(); 
+                        
+                        if (choice.equalsIgnoreCase("no")){ 
+                            System.out.println("Ok, thanks for using our program"); 
+                            break;  
+                     
+                        }
+                        
+                    } else if (choice.equalsIgnoreCase("stop")) { 
+
+                        System.out.println("Exiting the student registration system"); 
+                        break; 
+
+                    } else if (choice.equalsIgnoreCase("no")) { 
+                        
+                    } 
+                }
+            } else if (decision.equalsIgnoreCase("NO")) { 
+                System.out.println("Program Terminated");
+                break;
+                
+            } else { 
+                System.out.println("Invalid input, please enter a valid choice!"); 
+            }
+        }
+    }
+}

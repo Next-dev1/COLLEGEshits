@@ -1,0 +1,179 @@
+CompareTo
+
+public class Main2 { 
+public static void main (String [] args){ 
+
+String name = "Lorenz"; System.out.print(name.compareTo("Lorenz")); //compareTo() 
+
+} 
+}
+
+
+--- --- ---
+
+Char
+
+
+public class Main2 { 
+public static void main (String [] args){ 
+
+String name = "Lorenze"; 
+System.out.print(name.charAt(2)); //Char() 
+
+System.out.print(name.indexOf("n")); //Index() 
+
+} 
+}
+
+--- --- ---
+
+
+IndexOf
+
+public class Main2 { 
+public static void main (String [] args){ 
+
+String name = "Lorenze"; 
+
+//System.out.print(name.charAt(2)); //Char()//
+ 
+System.out.print(name.lastIndexOf("e")); //Index() 
+} 
+}
+
+--- --- ---
+
+Concat
+
+
+public class Main2 { 
+public static void main (String [] args){
+ 
+String name = "Lorenze"; //System.out.print(name.charAt(2)); //Char()// 
+
+System.out.print(name.concat(" pogi")); //Have space
+
+ } 
+}
+
+--- --- ---
+
+
+Substring
+
+
+public class Main2 { 
+
+public static void main (String [] args){ 
+
+String name = "Lorenze"; //System.out.print(name.charAt(2)); //Char()// 
+
+System.out.print(name.substring(1)); //Get the 1st index ( 0 ) 
+
+ } 
+}
+
+
+
+--- --- ---
+
+
+Output (Lorenz)
+
+
+public class Main2 { 
+
+public static void main (String [] args){
+
+String name = "Lorenze"; //System.out.print(name.charAt(2)); //Char()// 
+
+System.out.print(name.substring(0, 6 )); //Get the 1st index ( 0 ) 
+
+ } 
+}
+
+
+--- --- ---
+
+Upper Case
+
+public class Main2 { 
+public static void main (String [] args){
+
+ String name = "LorenzEe"; 
+
+//System.out.print(name.charAt(2)); //Char()// 
+
+System.out.print(name.toUpperCase()); //Get the 1st index ( 0 ) 
+
+} 
+}
+
+--- --- ---
+Lower Case
+
+public class Main2 { 
+public static void main (String [] args){ 
+
+String name = "LorenzEe"; 
+
+//System.out.print(name.charAt(2)); //Char()// 
+
+System.out.print(name.toLowerCase()); //Get the 1st index ( 0 ) 
+
+}
+}
+
+
+--- --- ---
+Trim
+
+public class Main2 { 
+public static void main (String [] args){ 
+
+String name = " Lorenz EeEe "; 
+
+// unahan at hulihan lang aalisin spaces //
+
+System.out.print(name.charAt(2)); //Char()// 
+
+System.out.print(name.trim()); //Get the 1st index ( 0 ) 
+
+} 
+}
+
+--- --- ---
+Overall
+
+import java.util.Scanner; 
+
+public class Main2 { 
+public static void main (String [] args){ 
+
+Scanner sc = new Scanner (System.in); 
+
+String name; 
+
+System.out.print("Enter name: "); 
+name = sc.nextLine(); 
+
+if(name != null){ 
+
+System.out.println("Original name format: " + name); 
+System.out.println("If uppercase: " + name.toUpperCase()); 
+System.out.println("If lowercase: " + name.toLowerCase()); 
+System.out.println("With concatenation " + name.concat(" pasado")); 
+
+}else{ 
+System.out.print("ERROR!! String only"); 
+
+   }
+  } 
+}
+
+--- --- ---
+
+
+
+
+

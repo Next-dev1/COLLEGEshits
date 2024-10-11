@@ -1,0 +1,62 @@
+import java.util.Scanner; 
+
+public class SeatReservation { 
+
+	public static void main(String[] args) { 
+		Scanner sc = new Scanner(System.in); 
+
+		String[][] seat = new String[10][4]; // Initializes a 2D array called "seat" to represent bus seats (10 rows, 4 columns).
+		
+		// Looping through each seat element and setting it to " *" to symbolize an empty seat.
+		for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 4; j++) {
+            
+		seat[i][j] = "*";
+			}
+		}
+
+		// Endless loop that runs until the user exits.
+		while (true) {
+                    
+			System.out.println("Bus Seat Reservation:");
+			System.out.println("\tCol 1\tCol 2\tCol 3\tCol 4"); // Displays column labels.
+
+			// Looping through each row and printing the seat map.
+			     for (int i = 0; i < 10; i++) {
+			System.out.print("Row " + (i + 1)); // Prints the row number.
+			     for (int j = 0; j < 4; j++) {
+			System.out.print("\t" + seat[i][j]); // Prints the seat status ("*" or "X").
+                        
+				}
+			System.out.print("\n"); // New line after each row.
+			}
+
+			System.out.print("Enter row and column number to reserve separated by space (Enter a negative answer to exit): "); // Prompts the user for seat selection.
+
+			int seat2 = sc.nextInt(); // Reads the user's input for the row number.
+
+			     if (seat2 >= 0) { // Checks if the entered row number is valid (positive).
+                            
+			int seat3 = sc.nextInt(); // Reads the user's input for the column number.
+
+			     if (seat2 <= 10 && seat3 <= 4) { // Checks if both row and column numbers are within bounds.
+			     if (seat[seat2 - 1][seat3 - 1].equals("*")) { // Checks if the chosen seat is available.
+				 seat[seat2 - 1][seat3 - 1] = "X"; // Marks the selected seat as reserved.
+                                 
+			System.out.println("Seat successfully reserved!"); 
+                        
+			continue; // Continues the loop for another reservation.
+                                                
+					} else {
+						System.out.println("Seat already reserved. Please choose another."); // Error message for occupied seat.
+					}
+				} else {
+					System.out.println("Invalid seat number. Please enter a valid row and column number."); // Error message for invalid input.
+				}
+			} else {
+				System.out.println("Program Exit!"); 
+				break; 
+			}
+		}
+	}
+}

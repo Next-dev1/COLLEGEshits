@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        String emp; 
+        char w;
+        char t;
+        
+        System.out.print("Enter Employee's Name: ");
+        emp = sc.nextLine();
+        
+        System.out.print("Is " + emp + " a full-time (F) or a part-time (P) employee: ");
+        w = sc.next().charAt(0);
+        
+        if (w == 'F' || w == 'f'){
+            System.out.print("Enter your monthly salary: ");
+            double sal = sc.nextDouble();
+                
+            System.out.println("\nEmployee: " + emp);
+            System.out.printf("Monthly Salary: %.2f Php", sal);
+            
+            System.out.print("\n\nEnter another employee (Y/N)? ");
+            t = sc.next().charAt(0);
+            if (t == 'Y' || t == 'y') {
+                main(args);
+            }
+            else {
+                System.out.println("Thank you for your cooperation.");
+            }
+        }
+        else if (w == 'P' || w == 'p') {
+            System.out.print("Enter your rate per hour: ");
+            double rate = sc.nextDouble();
+            System.out.print("Enter your hours worked without overtime: ");
+            double hr = sc.nextDouble();
+            System.out.print("Enter your overtime hours: ");
+            double overHr = sc.nextDouble();
+                
+            double wage = rate * hr;
+            double overPay = overHr * (rate * 1.25);
+            double oWage = wage + overPay;
+                
+            System.out.println("\nEmployee: " + emp);
+            System.out.printf("Wage without overtime: %.2f Php", wage);
+            System.out.printf("\nWage with overtime: %.2f Php", oWage);
+            
+            System.out.print("\n\nEnter another employee (Y/N)? ");
+            t = sc.next().charAt(0);
+            if (t == 'Y' || t == 'y') {
+                main(args);
+            }
+            else {
+                System.out.println("Thank you for your cooperation.");
+            }
+        }
+        else {
+            System.out.println("\nInvalid entry! Try again.");
+            main(args);
+        }
+    }
+}

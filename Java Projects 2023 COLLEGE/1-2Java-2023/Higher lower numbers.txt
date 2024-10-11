@@ -1,0 +1,23 @@
+// Write statements that will determine and display which between two (2) numbers is the higher and the lower.//
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        double number1 = scanner.nextDouble();
+        System.out.println("Enter the second number: ");
+        double number2 = scanner.nextDouble();
+
+        if (number1 > number2) {
+            System.out.printf("The higher number is: %.2f%n", number1);
+            System.out.printf("The lower number is: %.2f%n", number2);
+        } else if (number1 < number2) {
+            System.out.printf("The higher number is: %.2f%n", number2);
+            System.out.printf("The lower number is: %.2f%n", number1);
+        } else {
+            System.out.println("Both numbers are equal.");
+        }
+    }
+}

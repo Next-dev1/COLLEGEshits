@@ -1,0 +1,16 @@
+// Define statements that will ask the user to enter a base and an exponent number. 
+Then compute and display the power of the base.//
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the base: ");
+        double base = scanner.nextDouble();
+        System.out.println("Enter the exponent: ");
+        double exponent = scanner.nextDouble();
+        double result = Math.pow(base, exponent);
+        System.out.printf("The power of %.2f to the power %.2f is: %.2f%n", base, exponent, result);
+    }
+}

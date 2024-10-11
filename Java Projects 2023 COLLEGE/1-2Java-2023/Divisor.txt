@@ -1,0 +1,20 @@
+//Creating statements that will ask the user to enter a 
+dividend and a divisor of double type then divide them. Display the round off result.//
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the dividend: ");
+        double dividend = scanner.nextDouble();
+        System.out.println("Enter the divisor: ");
+        double divisor = scanner.nextDouble();
+        if (divisor == 0) {
+            System.out.println("Error: Divisor cannot be zero!");
+        } else {
+            double result = dividend / divisor;
+            System.out.printf("The rounded off result is: %.2f%n", result);
+        }
+    }
+}

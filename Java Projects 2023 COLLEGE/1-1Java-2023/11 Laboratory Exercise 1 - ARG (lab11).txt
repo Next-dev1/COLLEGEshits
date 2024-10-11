@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class KineticEnergy {
+
+    public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner input = new Scanner(System.in);
+
+        // Prompt user for object's mass and velocity
+        System.out.print("Enter mass in kilograms: ");
+        double mass = input.nextDouble();
+
+        System.out.print("Enter velocity in meters per second: ");
+        double velocity = input.nextDouble();
+
+        // Calculate and display kinetic energy using function call
+        double kineticEnergy = calculateKineticEnergy(mass, velocity);
+        System.out.printf("The object's kinetic energy is: %.2f J.\n", kineticEnergy);
+    }
+
+    // Function to calculate kinetic energy
+    public static double calculateKineticEnergy(double mass, double velocity) {
+        // Use the formula KE = 1/2 * mass * velocity^2
+        return 0.5 * mass * Math.pow(velocity, 2);
+    }
+}
