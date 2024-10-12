@@ -65,13 +65,13 @@ class Faculty extends Person {
 
 class Student extends Person {
     private String program;
-    private String yearLevel;
+    private int yearLevel;
 
     public void setProgram(String program) {
         this.program = program;
     }
 
-    public void setYearLevel(String yearLevel) {
+    public void setYearLevel(int yearLevel) {
         this.yearLevel = yearLevel;
     }
 
@@ -79,7 +79,7 @@ class Student extends Person {
         return program;
     }
 
-    public String getYearLevel() {
+    public int getYearLevel() {
         return yearLevel;
     }
 }
@@ -116,16 +116,21 @@ public class Collegist {
             faculty.setName(scanner.next());
             System.out.println("Type contact number: ");
             faculty.setContactNum(scanner.next());
-            System.out.println("Type status: ");
-            faculty.setStatus(scanner.next());
-            System.out.println("Is the faculty regular? (true/false): ");
-            faculty.setIsRegular(scanner.nextBoolean());
+            System.out.println("Is the faculty member regular/tenured? (Y/N): ");
+            char regularInput = scanner.next().charAt(0);
+
+            if (regularInput == 'Y' || regularInput == 'y') {
+                faculty.setIsRegular(true);
+                faculty.setStatus("Tenured");
+            } else {
+                faculty.setIsRegular(false);
+                faculty.setStatus("Non-Tenured");
+            }
 
             System.out.println("\n-------------------------------");
             System.out.println("Name: " + faculty.getName());
             System.out.println("Contact Number: " + faculty.getContactNum());
             System.out.println("Status: " + faculty.getStatus());
-            System.out.println("Is Regular: " + faculty.getIsRegular());
 
         } else if (choice == 'S' || choice == 's') {
             Student student = new Student();
@@ -134,10 +139,10 @@ public class Collegist {
             student.setName(scanner.next());
             System.out.println("Type contact number: ");
             student.setContactNum(scanner.next());
-            System.out.println("Type program: ");
+            System.out.println("Type student's enrolled program (e.g., BSIT, BSTM): ");
             student.setProgram(scanner.next());
-            System.out.println("Type year level: ");
-            student.setYearLevel(scanner.next());
+            System.out.println("Type student's year level (1 to 4): ");
+            student.setYearLevel(scanner.nextInt());
 
             System.out.println("\n-------------------------------");
             System.out.println("Name: " + student.getName());
