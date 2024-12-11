@@ -19,11 +19,33 @@ public class PokemonGame {
         System.out.println("Professor Samuel Oak: ");
         System.out.println(  "Welcome to the Pokémon Adventure Game, Trainer " + p1);
         System.out.println("In this game, you will become a Pokémon Trainer.");
-        System.out.println("You will catch, train, and battle Pokémon to become a Pokémon Master!");
-        System.out.println("Are you ready to embark on your journey?");
+        System.out.println("You will battle Pokémon to become a Pokémon Master!");
         System.out.println("_____________________________________________________________________");
-        
-        s.close();
+        System.out.println("Press enter to continue...");
+        s.nextLine();
+        s.nextLine();
+        System.out.println("Professor Samuel Oak: Choose your Pokémon... ");
+        System.out.println("1 - Pikachu");
+        System.out.println("2 - Charmander");
+        System.out.println("3 - Squirtle");
+        System.out.println("Press the number to choose your favorite Pokemon");
+        int pokemon = s.nextInt(); 
+
+        if (pokemon == 1){
+           Pikachu p = new Pikachu();
+           p.displayFight();
+        }
+        else if (pokemon == 2){
+            Charmander c = new Charmander();
+            c.displayFight();
+        }
+        else if (pokemon == 3){
+            Squirtle sq = new Squirtle();
+            sq.displayFight();
+        }
+        else{
+            System.out.println("Invalid option. Please choose a number between 1 and 3.");
+        }
     }
 
     else{
@@ -33,5 +55,22 @@ public class PokemonGame {
         }
 
         }
+    }
+}
+class Pikachu{
+    public void displayFight(){
+
+    }
+}
+
+class Charmander{
+    public void displayFight(){
+        
+    }
+}
+
+class Squirtle{
+    public void displayFight(){
+        
     }
 }
