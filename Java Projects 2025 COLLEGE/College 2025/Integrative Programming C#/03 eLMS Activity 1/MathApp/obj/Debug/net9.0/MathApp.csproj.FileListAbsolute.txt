@@ -1,0 +1,14 @@
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\bin\Debug\net9.0\MathApp.exe
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\bin\Debug\net9.0\MathApp.deps.json
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\bin\Debug\net9.0\MathApp.runtimeconfig.json
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\bin\Debug\net9.0\MathApp.dll
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\bin\Debug\net9.0\MathApp.pdb
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\obj\Debug\net9.0\MathApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\obj\Debug\net9.0\MathApp.AssemblyInfoInputs.cache
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\obj\Debug\net9.0\MathApp.AssemblyInfo.cs
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\obj\Debug\net9.0\MathApp.csproj.CoreCompileInputs.cache
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\obj\Debug\net9.0\MathApp.dll
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\obj\Debug\net9.0\refint\MathApp.dll
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\obj\Debug\net9.0\MathApp.pdb
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\obj\Debug\net9.0\MathApp.genruntimeconfig.cache
+D:\Projects-Codes\JavaProjects-2023-2024\College Project\Java Projects 2025 COLLEGE\College 2025\Integrative Programming C#\03 eLMS Activity 1\MathApp\obj\Debug\net9.0\ref\MathApp.dll
