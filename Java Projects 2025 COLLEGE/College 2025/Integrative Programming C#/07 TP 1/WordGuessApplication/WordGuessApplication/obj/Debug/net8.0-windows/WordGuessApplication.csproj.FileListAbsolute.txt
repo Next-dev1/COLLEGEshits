@@ -1,0 +1,16 @@
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\bin\Debug\net8.0-windows\WordGuessApplication.exe
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\bin\Debug\net8.0-windows\WordGuessApplication.deps.json
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\bin\Debug\net8.0-windows\WordGuessApplication.runtimeconfig.json
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\bin\Debug\net8.0-windows\WordGuessApplication.dll
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\bin\Debug\net8.0-windows\WordGuessApplication.pdb
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\WordGuessApplication.Form1.resources
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\WordGuessApplication.csproj.GenerateResource.cache
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\WordGuessApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\WordGuessApplication.AssemblyInfoInputs.cache
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\WordGuessApplication.AssemblyInfo.cs
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\WordGuessApplication.csproj.CoreCompileInputs.cache
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\WordGuessApplication.dll
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\refint\WordGuessApplication.dll
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\WordGuessApplication.pdb
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\WordGuessApplication.genruntimeconfig.cache
+C:\Users\Seanv\source\repos\WordGuessApplication\WordGuessApplication\WordGuessApplication\obj\Debug\net8.0-windows\ref\WordGuessApplication.dll
